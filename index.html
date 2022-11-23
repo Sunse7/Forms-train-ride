@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Train ride</title>
+</head>
+<body>
+    <main class="main">
+        <h2 class="main__title">ÅKA TÅG</h2>
+        <div class="destination__wrapper--left">
+            <section>
+                <h3 class="destination__title--small">STOCKHOLM</h3>
+                <P class="destination__timestamp">10.30</P>
+            </section>
+        </div>
+        <div class="destination__wrapper--right">
+            <section>
+                <h3 class="destination__title--small">GÖTEBORG</h3>
+                <p class="destination__timestamp">14.45</p>
+            </section>
+        </div>
+
+        <form class="booking">
+            <section class="radio__wrapper">
+                <input class="booking__class-option" type="radio" id="second-class" name="class-option" checked>
+                <label class="booking__label" for="second-class">2:a klass</label>
+            </section>
+            <section class="radio__wrapper">
+                <input class="booking__class-option" type="radio" id="first-class" name="class-option">
+                <label class="booking__label" for="first-class">1:a klass</label>
+            </section>
+            
+            <section class="booking__dropdown">
+                <label class="booking__label" for="ticket-amount">Antal biljetter</label>
+                <select class="booking__field" id="ticket-amount">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                </select>
+            </section>
+            
+            <section class="booking__dropdown">
+                <label class="booking__label" for="title">Titel</label>
+                <select class="booking__field" id="title">
+                    <option value="">Ms.</option>
+                    <option value="">Mrs.</option>
+                    <option value="">Mr.</option>
+                </select>
+            </section>
+            
+            <section class="booking__name">
+                <label class="booking__label" for="first-name">Förnamn</label>
+                <input class="booking__field" type="text" id="first-name" placeholder="Lucky">
+            </section>
+            
+            <section class="booking__name">
+                <label class="booking__label" for="last-name">Efternamn</label>
+                <input class="booking__field" type="text" id="last-name" placeholder="Voffsson">
+            </section>
+            
+            <section class="checkbox__wrapper">
+                <input class="booking__checkbox" type="checkbox" id="terms-condition">
+                <label class="booking__label" for="terms-condition">Godkänner villkoren</label>
+            </section>
+            
+            <button class="booking__button">Boka biljett</button>
+        </form>
+    </main>
+</body>
+</html>
